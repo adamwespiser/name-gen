@@ -1,0 +1,36 @@
+name:                name-gen
+version:             0.1.0.0
+github:              "adamwespiser/name-gen"
+license:             BSD3
+author:              "Adam Wespiser"
+maintainer:          "adamwespiser@gmail.com"
+copyright:           "Copyright (c) 2020 Adam Wespiser"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+dependencies:
+- base >= 4.7 && < 5
+- text
+- random
+
+default-extensions:
+- OverloadedStrings
+
+library:
+  source-dirs: src
+
+executables:
+  name-gen:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -Wall
+    - -Werror
+    dependencies:
+    - name-gen
+
