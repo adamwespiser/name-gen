@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 3c55fb5500f0f2a370c2d133da6a58b371b94f220735285e0339ab73ebb6e3b8
+-- hash: 9c59ed45595fffcfbb86eadfff055560aa9b780800c5535bea4a37215db81b51
 
 name:           name-gen
 version:        0.1.0.0
@@ -19,7 +19,6 @@ build-type:     Simple
 extra-source-files:
     README.md
     ChangeLog.md
-    assets
 
 source-repository head
   type: git
